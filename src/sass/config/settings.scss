@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+
+    @include lg {
+        max-width: 960px;
+    }
+
+    @include md {
+        max-width: 720px;
+    }
+
+    @include sm {
+        max-width: none;
+        padding: 0 15px;
+    }
+}

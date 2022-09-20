@@ -1,4 +1,104 @@
+@font-face {
+  font-family: "Lato";
+  src: url("Lato-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("Lato-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("Lato-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("Lato-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: blue;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+
+.header {
+  padding: 33px 0 31px;
+  background: rgba(16, 16, 29, 0.9);
+}
+.header__logo {
+  width: 247px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__nav-item {
+  margin-left: 60px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+.header__nav-item:first-child {
+  margin-left: 0;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: 0.3s ease;
+}
+.header__nav-link:hover, .header__nav-link--active {
+  color: #43ABF0;
 }
 /*# sourceMappingURL=main.css.map*/
